@@ -1,0 +1,20 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+svg {
+  fill: currentColor;
+}
+
+.item{
+  @apply px-5;
+}
+.item-image{
+  @apply inline-block mb-5;
+  max-width: 300px;
+  img{
+    @apply block h-full;
+  }
+}
