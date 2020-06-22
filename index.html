@@ -6,6 +6,7 @@
     <title>Shane Harper | Like I Did Available Now</title>
     <meta name="description" content="The official site of musician, actor, singer-songwriter, and dancer Shane Harper.">
     <link rel="stylesheet" href="./public/app.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 <body class="min-h-screen bg-primary">
 
@@ -14,8 +15,8 @@
             flex justify-between items-center flex-col lg:flex-row
             mb-8 lg:mb-0">
             <div class="logo flex items-center mb-4 lg:mb-0">
-                <img class="block mr-4" src="./public/images/logo.png" alt="Shane Harper">
-                <img class="block" src="./public/images/mmxx.png" alt="MMXX">
+                <img id="logo" class="block mr-4" src="./public/images/logo.png" alt="Shane Harper">
+                <img id="mmxx" class="block" src="./public/images/mmxx.png" alt="MMXX">
             </div>
             <ul class="flex items-center text-white mb-4">
                 <li class="mr-6">
@@ -32,12 +33,15 @@
                 <li class="mr-6">
                     <a target="_blank" href="https://www.youtube.com/user/shaneharpermusic"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" class="icon w-4" viewBox="0 0 21 20"><path d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"/></svg></a>
                 </li>
-                <li>
+                <li class="mr-6">
                     <a target="_blank" href="https://www.facebook.com/shaneharperonline"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="icon w-4" viewBox="0 0 20 20"><path d="M7.5,6.7H5V10h2.5v10h4.2V10h3L15,6.7h-3.3V5.3c0-0.8,0.2-1.1,0.9-1.1H15V0h-3.2c-3,0-4.3,1.3-4.3,3.8V6.7z"/></svg></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://shaneharper.bigcartel.com/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M5,19.8L2.5,18V6.2L5,7.3V19.8z M6.7,7.4V20l10.8-1.6V5.8L6.7,7.4z M11.6,0.8c-1.7,0-3.3,1.7-3.3,3.6l0,1.4 c0,0.3,0.2,0.4,0.5,0.4C9,6.2,9.2,6,9.2,5.8V4.4c0-1.4,1.2-2.7,2.5-2.7c0.4,0,0.8,0.2,1.2,0.5c0.4,0.4,0.5,0.9,0.5,1.4V5 c0,0.3,0.2,0.4,0.5,0.4c0.2,0,0.4-0.2,0.4-0.4l0-1.5C14.2,2,13.1,0.8,11.6,0.8z M6.3,5.8c0.2,0,0.4-0.2,0.4-0.4V3.6 c0-1.4,1.2-2.7,2.5-2.7l0.1,0c0.3-0.2,0.6-0.4,1-0.6C9.9,0.1,9.5,0,9.1,0C7.4,0,5.8,1.7,5.8,3.6v1.9C5.8,5.7,6.1,5.9,6.3,5.8z"/></svg></a>
                 </li>
             </ul>
         </div>
-        <div class="main font-body text-white flex-grow pt-10 flex items-center">
+        <div class="main font-body text-white flex-grow py-12 flex items-center">
             <!-- products will go here -->
             <div class="products
                 flex justify-around flex-col md:flex-row
@@ -78,7 +82,18 @@
                 </div>
             </div>
         </div>
+        <div id="footer" class="text-center lg:text-left">
+            <button
+                class="text-white uppercase text-xs"
+                data-micromodal-trigger="modal-1">Returns and Exchanges</button>
+
+            <div class="modal micromodal-slide" id="modal-1" aria-hidden="false"> <div class="modal__overlay" tabindex="-1" data-micromodal-close=""> <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title"> <header class="modal__header"> <h2 class="modal__title text-primary" id="modal-1-title"> Policy </h2> <button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button> </header> <div class="modal__content" id="modal-1-content"> <ul class="list-disc pl-4 mb-5"><li>Returns & exchanges are accepted within 30 days of order arrival to customer.</li><li>Shipping fees are not covered for merchandise without damage or shipped incorrectly.</li><li>Clothing that has been washed or worn will not be accepted for return.</li></ul> <p>Please contact <a href="mailto:temp@email.com">temp@email.com</a> for additional questions. </p> </div> <footer class="modal__footer"> <button class="modal__btn" data-micromodal-close="" aria-label="Close this dialog window">Close</button> </footer> </div> </div>
+        </div>
     </div>
 
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script>
+    MicroModal.init();
+</script>
 </body>
 </html>

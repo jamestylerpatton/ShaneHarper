@@ -9,6 +9,7 @@ module.exports = {
     },
     backgroundColor: theme => ({
      ...theme('colors'),
+     'white': '#eae8db',
      'primary': '#ddaea2',
     }),
     extend: {

@@ -4,8 +4,21 @@
 
 @tailwind utilities;
 
+@import './micromodal';
+
+.text-white{
+  color: #eae8db;
+}
+
 svg {
   fill: currentColor;
+}
+
+img#logo{
+  width: 235px;
+}
+img#mmxx{
+  height: 12px;
 }
 
 .item{
@@ -15,6 +28,6 @@ svg {
   @apply inline-block mb-5;
   max-width: 300px;
   img{
-    @apply block h-full;
+    @apply block w-full;
   }
 }
